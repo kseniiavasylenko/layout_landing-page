@@ -36,18 +36,18 @@
   display: inline-flex;
   align-items: center;
 
-&__text {
-  position: absolute;
-  right: 100%;
-  white-space: nowrap;
+  &__text {
+    position: absolute;
+    right: 100%;
+    white-space: nowrap;
 
-  opacity: 0;
-  transform: translateX(-10px);
-  transition: 0.3s ease;
-}
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.3s ease;
+  }
 
-&:hover .contact__text {
-  opacity: 1;
-  transform: translateX(0);
-}
+  &:hover .contact__text {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
