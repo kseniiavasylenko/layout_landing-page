@@ -1,14 +1,16 @@
 .contact-us {
   display: grid;
+
   --columns: 2;
+
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
 
-  @include onTablet {
+  @include on-tablet {
     --columns: 6;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     --columns: 12;
   }
 
@@ -20,12 +22,12 @@
   &__avenue {
     grid-column: 1/-1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1/3;
       grid-row: 1/-1;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 1/4;
     }
 
@@ -52,6 +54,7 @@
     &--address {
       color: black;
       font-size: 16px;
+
       // margin-bottom: 48px;
     }
   }
@@ -59,11 +62,11 @@
   &__cloisters {
     grid-column: 1/-1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1/3;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 4/7;
     }
 
@@ -97,11 +100,11 @@
   &__form {
     grid-column: 1/-1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 4/6;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 8/12;
     }
 

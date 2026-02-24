@@ -9,12 +9,12 @@
   line-height: 32px;
   letter-spacing: -1.5px;
 
-  @include onTablet {
+  @include on-tablet {
     font-size: 48px;
     margin-bottom: 140px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     font-size: 48px;
     margin-bottom: 138px;
   }
