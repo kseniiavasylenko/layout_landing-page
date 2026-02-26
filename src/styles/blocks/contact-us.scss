@@ -49,11 +49,13 @@
     &--phone {
       color: black;
       font-size: 16px;
+      text-decoration: none;
     }
 
     &--address {
       color: black;
       font-size: 16px;
+      text-decoration: none;
 
       // margin-bottom: 48px;
     }
@@ -88,12 +90,14 @@
     &--phone {
       color: black;
       font-size: 16px;
+      text-decoration: none;
     }
 
     &--address {
       color: black;
       font-size: 16px;
       margin-bottom: 48px;
+      text-decoration: none;
     }
   }
 
@@ -116,6 +120,7 @@
       width: 280px;
       height: 48px;
       margin-bottom: 16px;
+      border-color: transparent;
     }
 
     &--block::placeholder {
@@ -131,6 +136,11 @@
       line-height: 20px;
       width: 280px;
       height: 144px;
+      border-color: transparent;
+
+      &:hover::placeholder{
+        color: #161616;
+      }
     }
   }
 
@@ -141,8 +151,34 @@
     color: #fff;
     margin-bottom: 100px;
     border: $color;
+
+    @include on-tablet{
+      width: 288px;
+    }
+
+    @include on-desktop{
+      width: 411px;
+    }
   }
 }
+
+  textarea {
+  resize: none;
+  }
+
+  input{
+    font-family: $font-family;
+  }
+
+  input:hover::placeholder {
+  color: #161616;
+}
+
+input:focus{
+  color: #161616;
+  border-color: #161616;
+}
+
 
 .footer {
   position: relative;

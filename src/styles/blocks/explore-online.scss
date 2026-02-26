@@ -36,6 +36,10 @@
     height: 100%;
     object-fit: cover;
 
+    &:hover{
+      transform: scale(1.1);
+    }
+
     // margin-bottom: 24px;
     // @include onTablet{
     //   margin-bottom: 32px;
