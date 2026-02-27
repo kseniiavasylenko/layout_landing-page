@@ -121,6 +121,13 @@
       height: 48px;
       margin-bottom: 16px;
       border-color: transparent;
+      @include on-tablet{
+      width: 288px;
+    }
+
+    @include on-desktop{
+      width: 411px;
+    }
     }
 
     &--block::placeholder {
@@ -138,6 +145,14 @@
       height: 144px;
       border-color: transparent;
 
+    @include on-tablet{
+      width: 288px;
+    }
+
+    @include on-desktop{
+      width: 411px;
+    }
+
       &:hover::placeholder{
         color: #161616;
       }
@@ -151,6 +166,9 @@
     color: #fff;
     margin-bottom: 100px;
     border: $color;
+    font-family: $font-family;
+    font-size: 16px;
+    cursor: pointer;
 
     @include on-tablet{
       width: 288px;
