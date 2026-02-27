@@ -48,16 +48,26 @@
 
     &--phone {
       color: black;
+      display: inline-block;
       font-size: 16px;
       text-decoration: none;
+      transition: transform 0.3s ease;
+
+      &:hover{
+        transform: scale(1.05);
+      }
     }
 
     &--address {
+      display: inline-block;
       color: black;
       font-size: 16px;
       text-decoration: none;
+      transition: transform 0.3s ease;
 
-      // margin-bottom: 48px;
+      &:hover{
+        transform: scale(1.05);
+      }
     }
   }
 
@@ -88,16 +98,28 @@
     }
 
     &--phone {
+      display: inline-block;
       color: black;
       font-size: 16px;
       text-decoration: none;
+      transition: transform 0.3s ease;
+
+      &:hover{
+      transform: scale(1.05);
+      }
     }
 
     &--address {
+      display: inline-block;
       color: black;
       font-size: 16px;
       margin-bottom: 48px;
       text-decoration: none;
+      transition: transform 0.3s ease;
+
+      &:hover{
+      transform: scale(1.05);
+      }
     }
   }
 
